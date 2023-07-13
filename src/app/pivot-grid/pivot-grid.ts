@@ -25,6 +25,7 @@ export default class PivotGrid extends LitElement {
     }
     .pivot-grid {
       margin: 24px;
+      height: 790px;
       min-width: 600px;
       min-height: 300px;
     }
