@@ -25,7 +25,6 @@ export default class PivotGrid extends LitElement {
     }
     .pivot-grid {
       margin: 24px;
-      height: 790px;
       min-width: 600px;
       min-height: 300px;
     }
@@ -39,7 +38,7 @@ export default class PivotGrid extends LitElement {
   private financialService: FinancialService = new FinancialService();
 
   @property()
-  private dateDimension: any = new IgcPivotDateDimension({
+  private dateDimension: IgcPivotDateDimension = new IgcPivotDateDimension({
     memberName: 'Date',
     enabled: true,
   }, {
@@ -113,7 +112,7 @@ export default class PivotGrid extends LitElement {
       <link rel='stylesheet' href='../../ig-theme.css'>
       <link rel='stylesheet' href='node_modules/@infragistics/igniteui-webcomponents-grids/grids/themes/light/material.css'>
       <div class="row-layout group">
-        <igc-pivot-grid .data="${this.financialSales}" .pivotConfiguration="${this.pivotConfigHierarchy}" ?super-compact-mode="${true}" ?default-expand-state="${true}" id="pivot-grid" class="ig-typography ig-scrollbar pivot-grid"></igc-pivot-grid>
+        <igc-pivot-grid .data="${this.financialSales}" height="790px" .pivotConfiguration="${this.pivotConfigHierarchy}" ?super-compact-mode="${true}" ?default-expand-state="${true}" id="pivot-grid" class="ig-typography ig-scrollbar pivot-grid"></igc-pivot-grid>
         <igc-pivot-data-selector id="pivot-data-selector"></igc-pivot-data-selector>
       </div>
     `;

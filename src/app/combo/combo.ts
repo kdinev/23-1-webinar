@@ -99,7 +99,7 @@ export default class Combo extends LitElement {
             </span>
           </span>
         </igc-input>
-        <igc-combo ?outlined="${true}" .data="${this.northwindSuppliers}" label="Company" value-key="supplierID" display-key="companyName" ?autoFocusSearch="${true}" class="combo">
+        <igc-combo ?outlined="${true}" .data="${this.northwindSuppliers}" label="Company" single-select value-key="supplierID" display-key="companyName" ?autoFocusSearch="${true}" class="combo">
           <span slot="prefix">
             <span class="material-icons icon">
               pin_drop
