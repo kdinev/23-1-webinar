@@ -37,7 +37,7 @@ export default class ExportSummaries extends LitElement {
     return html`
       <link rel='stylesheet' href='../../ig-theme.css'>
       <link rel='stylesheet' href='node_modules/@infragistics/igniteui-webcomponents-grids/grids/themes/light/material.css'>
-      <igc-grid .data="${this.northwindEmployees}" primary-key="employeeID" display-density="cosy" allow-filtering="true" filter-mode="excelStyleFilter" auto-generate="false" class="ig-typography ig-scrollbar grid">
+      <igc-grid .data="${this.northwindEmployees}" primary-key="employeeID" display-density="cosy" allow-filtering="true" filter-mode="excelStyleFilter" auto-generate="false" height="790px" class="ig-typography ig-scrollbar grid">
         <igc-grid-toolbar>
           <igc-grid-toolbar-actions>
             <igc-grid-toolbar-exporter></igc-grid-toolbar-exporter>
